@@ -2,8 +2,9 @@
 funtion change(){
 	return new Promise.resolve("Hello, World!")
 }
+document.getElementById("output").textContent = "heo"
 setTimeout(()=>{
 	let x = change();
-	x= "hel"
+
 	document.getElementById("output").textContent = await x.json()
 },1000)
